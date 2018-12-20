@@ -6,18 +6,18 @@
 virtualenv --system-site-packages -p python3 ./tensorflow
 source ./tensorflow/bin/activate
 ```
-설치 진행
+## 설치 진행
 ```
 pip install --upgrade tensorflow
 pip install --upgrade pip
 pip list
 ```
-테스트
+## 테스트
 ```
 python -c "import tensorflow as tf; tf.enable_eager_execution(); print(tf.reduce_sum(tf.random_normal([1000, 1000])))"
 ```
 
-나가기
+## 나가기
 ```
 deactivate
 ```
